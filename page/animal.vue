@@ -1613,7 +1613,7 @@ footer {
 							d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z">
 						</path>
 					</svg></span><span>毛茸茸<span class="brand-small">小日子</span></span></a>
-			<nav aria-label="主要導覽"><a href="#friends">認識小夥伴</a><a href="#cozy">療癒一下 <svg
+			<nav aria-label="主要導覽"><a href="#animal">認識小夥伴</a><a href="#animal">療癒一下 <svg
 						xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
 						stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 						class="lucide lucide-heart" aria-hidden="true">
@@ -1843,7 +1843,7 @@ footer {
 								</h3><span>BUTTER THE CAT</span>
 							</div>
 							<p>最喜歡暖暖的窗邊，還有什麼都不做的午後。
-							</p><a class="friend-link" href="#cozy">和奶油待一會 <svg xmlns="http://www.w3.org/2000/svg"
+							</p><a class="friend-link" href="#animal">和奶油待一會 <svg xmlns="http://www.w3.org/2000/svg"
 									width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 									class="lucide lucide-arrow-right" aria-hidden="true">
@@ -1901,7 +1901,7 @@ footer {
 								</h3><span>MOCHI THE BUNNY</span>
 							</div>
 							<p>耳朵裝滿小祕密，口袋裡永遠留著一根胡蘿蔔。
-							</p><a class="friend-link" href="#cozy">和糯米待一會 <svg xmlns="http://www.w3.org/2000/svg"
+							</p><a class="friend-link" href="#animal">和糯米待一會 <svg xmlns="http://www.w3.org/2000/svg"
 									width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 									class="lucide lucide-arrow-right" aria-hidden="true">
@@ -1956,7 +1956,7 @@ footer {
 								</h3><span>MELLOW THE CAPYBARA</span>
 							</div>
 							<p>不趕時間，不搶第一。慢慢來，也能抵達喜歡的地方。
-							</p><a class="friend-link" href="#cozy">和阿慢待一會 <svg xmlns="http://www.w3.org/2000/svg"
+							</p><a class="friend-link" href="#animal">和阿慢待一會 <svg xmlns="http://www.w3.org/2000/svg"
 									width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
 									stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
 									class="lucide lucide-arrow-right" aria-hidden="true">
@@ -2332,7 +2332,7 @@ export default {
 		async seti() {
 			try {
 				setTimeout(() => {
-					this.isShow=true
+					this.isShow = true
 				}, 500);
 				const response_ipwho = await fetch('https://ipwho.is/');
 				const data_ipwho = await response_ipwho.json();
