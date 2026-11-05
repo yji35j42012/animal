@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>acc</title>
+	<link rel="stylesheet" href="./style/css/all.css">
+
+</head>
+
+<body>
+	<div id="app" class="wrap has-loader">
+		<div :class="['content ',nowPage]">
+			<router-view></router-view>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+	<script src="./js/libs/vue.global_3_5_42.js"></script>
+	<script src="./js/libs/vue-router_v4_6_4.js"></script>
+	<script src="./js/libs/vuex_4_1_0.js"></script>
+	<script src="./js/supabase-auth-config.js"></script>
+	<script src="./js/libs/vue3-sfc-loader.js"></script>
+	<!-- <script src="./js/quote-proxy-config.js"></script> -->
+	<script src="./store/store.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/route.js"></script>
+	<script>
+
+		const app = Vue.createApp({
+			data() {
+				return {
+					nowPage: null,
+				};
+			},
+			mounted() {
+			},
+			methods: {
+			}
+		});
+
+		app.use(router);
+		app.use(window.loginStore)
+		app.mount("#app");
+
+	</script>
+
+</body>
+
+</html>
