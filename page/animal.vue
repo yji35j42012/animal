@@ -2331,6 +2331,9 @@ export default {
 		},
 		async seti() {
 			try {
+				setTimeout(() => {
+					this.isShow=true
+				}, 500);
 				const response_ipwho = await fetch('https://ipwho.is/');
 				const data_ipwho = await response_ipwho.json();
 				const { error } = await db
