@@ -363,6 +363,7 @@ export default {
 			} else {
 				this.contacts.forEach(element => {
 					if (element.name === this.in.ip) {
+						this.seti();
 						setTimeout(() => {
 							this.$router.push('/animal');
 						}, 1000);
