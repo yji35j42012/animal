@@ -2270,7 +2270,6 @@ export default {
         };
     },
     mounted() {
-        this.geti()
     },
     methods: {
         async geti(params) {
